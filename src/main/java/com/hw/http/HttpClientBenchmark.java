@@ -458,11 +458,11 @@ public class HttpClientBenchmark {
 	 */
 	public static void main(String[] args) throws Exception {
 		if (args.length != 3) {
-			System.out.println("Usage: java -cp blah Test <DOWNLOAD_FILE_URL> "
+			System.out.println("Usage: java -cp blah HttpClientBenchmark <DOWNLOAD_FILE_URL> "
 					+ "<CONCURRENCY> <ITERATIONS>");
 			System.out
 					.println("Ex: java -server -Xmx4g  -cp "
-							+ ".:./target/tezParser-1.0-SNAPSHOT-jar-with-dependencies.jar "
+							+ ".:./target/*:"
 							+ "Test https://androidnetworktester.googlecode.com/files/1mb.txt 10 20");
 			System.exit(-1);
 		}
